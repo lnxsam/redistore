@@ -97,7 +97,7 @@ func provideCache() *redis.Client {
 }
 
 func loadConfigFile() {
-	err := godotenv.Load("./../.env")
+	err := godotenv.Load("./.env")
 	if err != nil {
 		panic(err)
 		// panic("can not find env file")
