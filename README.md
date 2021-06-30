@@ -6,7 +6,7 @@ This repository is based on Hexagonal architecture(ports&adaptors).
 ## How to run project
 
 Go step by step
-- start postdres, redis and redisearch service instances by running:
+- start postdres, redis(with redisearch module) service instances by running:
         
         docker-compose up -d
 
