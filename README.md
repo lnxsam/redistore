@@ -1,7 +1,7 @@
 # redistore
 
 Implementation of mini e-commerce app using Postgres, Redis, and Redisearch.
-This repository is based on Hexagonal architecture.
+This repository is based on Hexagonal architecture(ports&adaptors).
 
 ## How to run project
 
