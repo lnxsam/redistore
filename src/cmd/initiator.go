@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/RediSearch/redisearch-go/redisearch"
-	"github.com/gin-gonic/gin"
 	"log"
 	"net/http"
 	"redistore/internal/api/rest"
@@ -12,6 +10,9 @@ import (
 	"redistore/internal/domain/searching"
 	"redistore/internal/domain/updating"
 	"strconv"
+
+	"github.com/RediSearch/redisearch-go/redisearch"
+	"github.com/gin-gonic/gin"
 
 	"redistore/pkg/configs"
 
@@ -97,7 +98,7 @@ func provideCache() *redis.Client {
 }
 
 func loadConfigFile() {
-	err := godotenv.Load("./.env")
+	err := godotenv.Load("./../.env")
 	if err != nil {
 		panic(err)
 		// panic("can not find env file")
